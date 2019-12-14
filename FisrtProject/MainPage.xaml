@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FisrtProject.MainPage"
+             Title="Sing In Page">
+
+    <StackLayout Margin="20">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="THEGUY.png" 
+                   HeightRequest="150"
+                   WidthRequest="150"
+                   Grid.Column="1"
+                   Grid.Row="1"/>
+        </Grid>
+        <BoxView Color="Default"
+                 HeightRequest="100"/>
+        <Label Text="Email"/>
+        <Entry Placeholder="Your name"/>
+        <Label Text="Password"/>
+        <Entry Placeholder="Your Password"
+               IsPassword="True"/>
+        <BoxView Color="Default"
+                 HeightRequest="50"/>
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="CenterAndExpand"
+                     Padding="15">
+            <Button Text="Sign in" 
+                    CornerRadius="13"
+                    BorderColor="Black"
+                    BorderWidth="2"
+                    BackgroundColor="AliceBlue"
+                    Clicked="Button_Clicked"/>
+            <Button Text="Sing up"
+                    CornerRadius="13"
+                    BorderColor="Black"
+                    BorderWidth="2"
+                    BackgroundColor="AliceBlue"
+                    Clicked="Button_Clicked_1"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
